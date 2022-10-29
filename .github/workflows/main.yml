@@ -3,11 +3,6 @@ on:
   push:
     branches:
       - 'master'
-#   pull_request:
-#     types:
-#       - closed
-#     branches:
-#       - 'master'
       
 jobs:
   build:
@@ -29,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: yuquang/aimmalabwebsite:latest
+          tags: yuquang/aimmalabwebsite:0.0.1
