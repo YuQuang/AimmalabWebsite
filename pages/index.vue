@@ -1,6 +1,6 @@
 <template>
   <div>
-    Hello
+    Dawn is smart
   </div>
 </template>
 
