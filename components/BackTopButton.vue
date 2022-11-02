@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed border right-3 bottom-4 w-14 h-14 rounded-full shadow-lg flex justify-center items-center active:scale-95 transition-all"
+    class="fixed border right-10 bottom-4 w-14 h-14 rounded-full shadow-lg flex justify-center items-center active:scale-95 transition-all"
     :class="[scrollTop<150 && 'scale-0 pointer-events-none']"
     @click="backToTop"
   >
@@ -19,7 +19,12 @@
 
 <script>
 export default {
-  props: ['target'],
+  props: {
+    target: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       targetElement: null,
@@ -33,10 +38,8 @@ export default {
   methods: {
     scrollHandler (e) {
       this.scrollTop = e.target.scrollTop
-      console.log(this.scrollTop)
     },
     backToTop () {
-      console.log(this.targetElement)
       this.targetElement.scrollTop = 0
     }
   }

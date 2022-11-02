@@ -13,6 +13,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://unpkg.com/core-js-bundle@3.6.1/minified.js' },
+      { src: '/src/live2dcubismcore.js' },
+      { src: '/src/bundle.js' }
     ]
   },
 

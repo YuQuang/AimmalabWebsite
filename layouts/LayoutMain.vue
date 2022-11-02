@@ -5,7 +5,10 @@
       <div class="flex-1">
         <Nuxt />
       </div>
-      <div class="flex-none">Footer</div>
+      <div class="flex-none">
+        Footer
+      </div>
+      <PichuCanvas />
     </main>
     <BackTopButton target="main" />
   </div>
@@ -14,8 +17,9 @@
 <script>
 import NavBar from '../components/NavBar.vue'
 import BackTopButton from '../components/BackTopButton.vue'
+import PichuCanvas from '~/components/PichuCanvas.vue'
 
 export default {
-  components: { NavBar, BackTopButton }
+  components: { NavBar, BackTopButton, PichuCanvas }
 }
 </script>

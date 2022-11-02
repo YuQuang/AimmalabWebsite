@@ -1,15 +1,20 @@
 <template>
   <div
-    class="absolute p-4 w-full text-right transition-all"
+    class="absolute p-4 w-full text-center transition-all z-10"
     :class="[scrollTop>100 && 'text-white bg-black/30 backdrop-blur-sm shadow-lg']"
   >
-    Header {{scrollTop}}
+    &nbsp;
   </div>
 </template>
 
 <script>
 export default {
-  props: ['target'],
+  props: {
+    target: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       scrollTop: 0
@@ -22,7 +27,6 @@ export default {
   methods: {
     scrollHandler (e) {
       this.scrollTop = e.target.scrollTop
-      console.log(this.scrollTop)
     }
   }
 }
