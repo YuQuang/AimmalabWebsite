@@ -1,24 +1,24 @@
 {
     "Version": 1,
-    "Name": "043black",
-    "ModelID": "dbef5350827348ccb451e67c882108fc",
+    "Name": "Pichu",
+    "ModelID": "c17fc8d11e7c441ea2c939c73f95fc6e",
     "FileReferences": {
-        "Icon": "icon.png",
-        "Model": "043black.model3.json",
-        "IdleAnimation": "taiki.motion3.json",
+        "Icon": "",
+        "Model": "Pichu.model3.json",
+        "IdleAnimation": "",
         "IdleAnimationWhenTrackingLost": ""
     },
     "ModelSaveMetadata": {
-        "LastSavedVTubeStudioVersion": "1.18.0",
+        "LastSavedVTubeStudioVersion": "1.19.0",
         "LastSavedPlatform": "Steam",
-        "LastSavedDateUTC": "Wednesday, 30 March 2022, 02:10:08",
-        "LastSavedDateLocalTime": "Wednesday, 30 March 2022, 11:10:08",
-        "LastSavedDateUnixMillisecondTimestamp": "1648606208096"
+        "LastSavedDateUTC": "Sunday, 08 May 2022, 04:47:04",
+        "LastSavedDateLocalTime": "Sunday, 08 May 2022, 05:47:04",
+        "LastSavedDateUnixMillisecondTimestamp": "1651985224079"
     },
     "SavedModelPosition": {
         "Position": {
-            "x": 0.0,
-            "y": -24.603771209716798,
+            "x": 3.8938064575195314,
+            "y": -6.0177001953125,
             "z": 0.0
         },
         "Rotation": {
@@ -28,13 +28,13 @@
             "w": 1.0
         },
         "Scale": {
-            "x": 0.9482003450393677,
-            "y": 0.9482003450393677,
+            "x": 1.4426515102386475,
+            "y": 1.4426515102386475,
             "z": 1.0
         }
     },
     "ModelPositionMovement": {
-        "Use": false,
+        "Use": true,
         "X": 6,
         "Y": 8,
         "Z": 11,
@@ -50,76 +50,77 @@
         "WindStrength": 0
     },
     "GeneralSettings": {
-        "TimeUntilTrackingLostIdleAnimation": 0.0
+        "TimeUntilTrackingLostIdleAnimation": 1.0,
+        "WorkshopSharingForbidden": true
     },
     "ParameterSettings": [
         {
-            "Name": "",
+            "Name": "Face Left/Right Rotation",
             "Input": "FaceAngleX",
             "InputRangeLower": -30.0,
             "InputRangeUpper": 30.0,
-            "OutputRangeLower": -45.0,
-            "OutputRangeUpper": 45.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
             "ClampInput": false,
             "ClampOutput": false,
             "UseBlinking": false,
             "UseBreathing": false,
             "OutputLive2D": "ParamAngleX",
-            "Smoothing": 20,
+            "Smoothing": 15,
             "Minimized": false
         },
         {
-            "Name": "",
+            "Name": "Face Up/Down Rotation",
             "Input": "FaceAngleY",
-            "InputRangeLower": -30.0,
-            "InputRangeUpper": 30.0,
-            "OutputRangeLower": -90.0,
-            "OutputRangeUpper": 45.0,
+            "InputRangeLower": -20.0,
+            "InputRangeUpper": 20.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
             "ClampInput": false,
             "ClampOutput": false,
             "UseBlinking": false,
             "UseBreathing": false,
             "OutputLive2D": "ParamAngleY",
-            "Smoothing": 20,
+            "Smoothing": 15,
             "Minimized": false
         },
         {
-            "Name": "",
-            "Input": "EyeOpenLeft",
-            "InputRangeLower": 0.0,
-            "InputRangeUpper": 0.30000001192092898,
-            "OutputRangeLower": 0.0,
-            "OutputRangeUpper": 1.0,
-            "ClampInput": false,
-            "ClampOutput": false,
-            "UseBlinking": true,
-            "UseBreathing": false,
-            "OutputLive2D": "ParamEyeLOpen",
-            "Smoothing": 5,
-            "Minimized": false
-        },
-        {
-            "Name": "",
-            "Input": "MouthOpen",
-            "InputRangeLower": 0.0,
-            "InputRangeUpper": 1.0,
-            "OutputRangeLower": 0.0,
-            "OutputRangeUpper": 0.800000011920929,
+            "Name": "Face Lean Rotation",
+            "Input": "FaceAngleZ",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
             "ClampInput": false,
             "ClampOutput": false,
             "UseBlinking": false,
             "UseBreathing": false,
-            "OutputLive2D": "ParamMouthOpenY",
-            "Smoothing": 1,
+            "OutputLive2D": "ParamAngleZ",
+            "Smoothing": 30,
             "Minimized": false
         },
         {
-            "Name": "",
-            "Input": "MouthSmile",
+            "Name": "Eye Open Left",
+            "Input": "EyeOpenLeft",
             "InputRangeLower": 0.0,
-            "InputRangeUpper": 1.0,
+            "InputRangeUpper": 0.4000000059604645,
             "OutputRangeLower": 0.0,
-            "OutputRangeUpper": 1.2000000476837159,
+            "OutputRangeUpper": 1.899999976158142,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeLOpen",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Name": "Eye Smile Left",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.699999988079071,
+            "InputRangeUpper": 0.8999999761581421,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
             "ClampInput": false,
             "ClampOutput": false,
             "UseBlinking": false,
@@ -127,14 +128,239 @@
             "OutputLive2D": "ParamEyeLSmile",
             "Smoothing": 10,
             "Minimized": false
+        },
+        {
+            "Name": "Eye Open Right",
+            "Input": "EyeOpenRight",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 0.4000000059604645,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.899999976158142,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeROpen",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Name": "Eye Smile Right",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.699999988079071,
+            "InputRangeUpper": 0.8999999761581421,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeRSmile",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Name": "Eye X",
+            "Input": "EyeRightX",
+            "InputRangeLower": -1.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 1.0,
+            "OutputRangeUpper": -1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeBallX",
+            "Smoothing": 8,
+            "Minimized": false
+        },
+        {
+            "Name": "Eye Y",
+            "Input": "EyeRightY",
+            "InputRangeLower": -1.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeBallY",
+            "Smoothing": 8,
+            "Minimized": false
+        },
+        {
+            "Name": "Brow Height Left",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowLY",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Name": "Brow Height Right",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowRY",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Name": "Brow Form Left",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowLForm",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Name": "Brow Form Right",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowRForm",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Name": "Mouth Smile",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamMouthForm",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Name": "Mouth Open",
+            "Input": "MouthOpen",
+            "InputRangeLower": 0.10000000149011612,
+            "InputRangeUpper": 0.5,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamMouthOpenY",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Name": "Cheeks",
+            "Input": "CheekPuff",
+            "InputRangeLower": 0.10000000149011612,
+            "InputRangeUpper": 0.8999999761581421,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 30.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamCheek",
+            "Smoothing": 45,
+            "Minimized": false
+        },
+        {
+            "Name": "Body Rotation X",
+            "Input": "FaceAngleX",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -10.0,
+            "OutputRangeUpper": 10.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBodyAngleX",
+            "Smoothing": 20,
+            "Minimized": false
+        },
+        {
+            "Name": "Body Rotation Y",
+            "Input": "FaceAngleY",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -10.0,
+            "OutputRangeUpper": 10.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBodyAngleY",
+            "Smoothing": 20,
+            "Minimized": false
+        },
+        {
+            "Name": "Auto Breath",
+            "Input": "",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": true,
+            "OutputLive2D": "ParamBreath",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Name": "Mouth X",
+            "Input": "MouthX",
+            "InputRangeLower": -1.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "MouthX",
+            "Smoothing": 20,
+            "Minimized": false
         }
     ],
     "Hotkeys": [
         {
-            "HotkeyID": "f2eb31b34b194e0995e2b8e9949644d4",
-            "Name": "怖い顔",
+            "HotkeyID": "6eadf38bcbc94619838fc4f14a187789",
+            "Name": "Tears",
             "Action": "ToggleExpression",
-            "File": "kowai.exp3.json",
+            "File": "Sad.exp3.json",
             "Position": {
                 "X": 0.0,
                 "Y": 0.0,
@@ -174,7 +400,7 @@
                 "LoadAtCurrentPosition": true
             },
             "Triggers": {
-                "Trigger1": "",
+                "Trigger1": "N1",
                 "Trigger2": "",
                 "ScreenButton": 1
             },
@@ -185,19 +411,19 @@
             "DeactivateAfterKeyUp": false,
             "DeactivateAfterSeconds": false,
             "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.009999999776482582,
+            "FadeSecondsAmount": 0.5,
             "OnScreenHotkeyColor": {
                 "r": 0.0,
-                "g": 0.33454465866088869,
+                "g": 0.927208423614502,
                 "b": 1.0,
                 "a": 1.0
             }
         },
         {
-            "HotkeyID": "9f7a5a16ec6a49f3bcfdfbfab8f26166",
-            "Name": "ニヤリ",
+            "HotkeyID": "b03d8e95c9324bd9986172c151eb50e5",
+            "Name": "Angry",
             "Action": "ToggleExpression",
-            "File": "niyari.exp3.json",
+            "File": "Angry.exp3.json",
             "Position": {
                 "X": 0.0,
                 "Y": 0.0,
@@ -237,7 +463,7 @@
                 "LoadAtCurrentPosition": true
             },
             "Triggers": {
-                "Trigger1": "",
+                "Trigger1": "N2",
                 "Trigger2": "",
                 "ScreenButton": 2
             },
@@ -248,19 +474,19 @@
             "DeactivateAfterKeyUp": false,
             "DeactivateAfterSeconds": false,
             "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.009999999776482582,
+            "FadeSecondsAmount": 0.5,
             "OnScreenHotkeyColor": {
-                "r": 0.0,
-                "g": 0.30362939834594729,
-                "b": 1.0,
+                "r": 1.0,
+                "g": 0.1967092752456665,
+                "b": 0.0,
                 "a": 1.0
             }
         },
         {
-            "HotkeyID": "2b49707ed8a0430d8736193fbb0a3053",
-            "Name": "んほー",
+            "HotkeyID": "e670fd8fcd5f4240a4b41ef07c6a1e97",
+            "Name": "Dispair",
             "Action": "ToggleExpression",
-            "File": "nho.exp3.json",
+            "File": "Dispair.exp3.json",
             "Position": {
                 "X": 0.0,
                 "Y": 0.0,
@@ -300,7 +526,7 @@
                 "LoadAtCurrentPosition": true
             },
             "Triggers": {
-                "Trigger1": "",
+                "Trigger1": "N3",
                 "Trigger2": "",
                 "ScreenButton": 3
             },
@@ -311,19 +537,19 @@
             "DeactivateAfterKeyUp": false,
             "DeactivateAfterSeconds": false,
             "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.009999999776482582,
+            "FadeSecondsAmount": 0.5,
             "OnScreenHotkeyColor": {
-                "r": 0.0,
-                "g": 0.350006103515625,
+                "r": 0.4901909828186035,
+                "g": 0.0,
                 "b": 1.0,
                 "a": 1.0
             }
         },
         {
-            "HotkeyID": "20076cb70398489f975accd6b349d684",
-            "Name": "",
+            "HotkeyID": "340aa176ad31486b8f6602f7fae89d97",
+            "Name": "Shock",
             "Action": "ToggleExpression",
-            "File": "naa.exp3.json",
+            "File": "Shock.exp3.json",
             "Position": {
                 "X": 0.0,
                 "Y": 0.0,
@@ -363,7 +589,7 @@
                 "LoadAtCurrentPosition": true
             },
             "Triggers": {
-                "Trigger1": "",
+                "Trigger1": "N4",
                 "Trigger2": "",
                 "ScreenButton": 4
             },
@@ -374,19 +600,19 @@
             "DeactivateAfterKeyUp": false,
             "DeactivateAfterSeconds": false,
             "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.009999999776482582,
+            "FadeSecondsAmount": 0.5,
             "OnScreenHotkeyColor": {
-                "r": 0.0,
-                "g": 0.30362939834594729,
-                "b": 1.0,
+                "r": 0.5303833484649658,
+                "g": 1.0,
+                "b": 0.0,
                 "a": 1.0
             }
         },
         {
-            "HotkeyID": "0a6208764ce94bf28a44e56ab501d2b3",
-            "Name": "",
-            "Action": "RemoveAllExpressions",
-            "File": "",
+            "HotkeyID": "79a80f14de2c4828af91811ca3d205dd",
+            "Name": "Happy",
+            "Action": "ToggleExpression",
+            "File": "Happy.exp3.json",
             "Position": {
                 "X": 0.0,
                 "Y": 0.0,
@@ -426,7 +652,7 @@
                 "LoadAtCurrentPosition": true
             },
             "Triggers": {
-                "Trigger1": "",
+                "Trigger1": "N5",
                 "Trigger2": "",
                 "ScreenButton": 5
             },
@@ -440,133 +666,7 @@
             "FadeSecondsAmount": 0.5,
             "OnScreenHotkeyColor": {
                 "r": 1.0,
-                "g": 0.0,
-                "b": 0.0,
-                "a": 1.0
-            }
-        },
-        {
-            "HotkeyID": "9fa93432b6754c8794ce95d6a3907496",
-            "Name": "足の非表示",
-            "Action": "ToggleExpression",
-            "File": "regoff.exp3.json",
-            "Position": {
-                "X": 0.0,
-                "Y": 0.0,
-                "Z": 0.0,
-                "Rotation": 0.0
-            },
-            "ColorOverlay": {
-                "On": false,
-                "IsStaticColor": false,
-                "Display": -1,
-                "WindowName": "",
-                "IncludeLeft": false,
-                "IncludeMid": false,
-                "IncludeRight": false,
-                "BaseValue": 0,
-                "OverlayValue": 0,
-                "Smoothing": 0,
-                "IncludeItems": false,
-                "StaticColor": {
-                    "r": 0.0,
-                    "g": 0.0,
-                    "b": 0.0,
-                    "a": 1.0
-                }
-            },
-            "HandGestureSettings": {
-                "GestureLeft": "",
-                "GestureRight": "",
-                "GestureCombinator": "AND",
-                "AllowMirroredGesture": false,
-                "DeactivateExpWhenGestureNotDetected": false,
-                "SecondsUntilDetection": 0.5,
-                "SecondsDetected": 0.0,
-                "PercentDetected": 0.0
-            },
-            "LoadModelSettings": {
-                "LoadAtCurrentPosition": true
-            },
-            "Triggers": {
-                "Trigger1": "",
-                "Trigger2": "",
-                "ScreenButton": 6
-            },
-            "IsGlobal": true,
-            "IsActive": true,
-            "Minimized": false,
-            "StopsOnLastFrame": false,
-            "DeactivateAfterKeyUp": false,
-            "DeactivateAfterSeconds": false,
-            "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.009999999776482582,
-            "OnScreenHotkeyColor": {
-                "r": 1.0,
-                "g": 0.944665789604187,
-                "b": 0.0,
-                "a": 1.0
-            }
-        },
-        {
-            "HotkeyID": "eab5c29476c645be825aa1086e45b034",
-            "Name": "ガクブル",
-            "Action": "TriggerAnimation",
-            "File": "gsku.motion3.json",
-            "Position": {
-                "X": 0.0,
-                "Y": 0.0,
-                "Z": 0.0,
-                "Rotation": 0.0
-            },
-            "ColorOverlay": {
-                "On": false,
-                "IsStaticColor": false,
-                "Display": -1,
-                "WindowName": "",
-                "IncludeLeft": false,
-                "IncludeMid": false,
-                "IncludeRight": false,
-                "BaseValue": 0,
-                "OverlayValue": 0,
-                "Smoothing": 0,
-                "IncludeItems": false,
-                "StaticColor": {
-                    "r": 0.0,
-                    "g": 0.0,
-                    "b": 0.0,
-                    "a": 1.0
-                }
-            },
-            "HandGestureSettings": {
-                "GestureLeft": "",
-                "GestureRight": "",
-                "GestureCombinator": "AND",
-                "AllowMirroredGesture": false,
-                "DeactivateExpWhenGestureNotDetected": false,
-                "SecondsUntilDetection": 0.5,
-                "SecondsDetected": 0.0,
-                "PercentDetected": 0.0
-            },
-            "LoadModelSettings": {
-                "LoadAtCurrentPosition": true
-            },
-            "Triggers": {
-                "Trigger1": "",
-                "Trigger2": "",
-                "ScreenButton": 7
-            },
-            "IsGlobal": true,
-            "IsActive": true,
-            "Minimized": false,
-            "StopsOnLastFrame": false,
-            "DeactivateAfterKeyUp": false,
-            "DeactivateAfterSeconds": false,
-            "DeactivateAfterSecondsAmount": 10.0,
-            "FadeSecondsAmount": 0.5,
-            "OnScreenHotkeyColor": {
-                "r": 0.08141493797302246,
-                "g": 1.0,
+                "g": 0.9742147922515869,
                 "b": 0.0,
                 "a": 1.0
             }
