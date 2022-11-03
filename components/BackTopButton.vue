@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed border right-10 bottom-4 w-14 h-14 rounded-full shadow-lg flex justify-center items-center active:scale-95 transition-all"
+    class="fixed border right-10 bottom-4 w-14 h-14 rounded-full shadow-lg flex justify-center items-center active:scale-95 transition-all bg-slate-50"
     :class="[scrollTop<150 && 'scale-0 pointer-events-none']"
     @click="backToTop"
   >
