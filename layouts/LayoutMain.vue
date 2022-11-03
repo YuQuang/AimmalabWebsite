@@ -6,7 +6,7 @@
         <Nuxt />
       </div>
       <div class="flex-none">
-        Footer
+        <MainFooter />
       </div>
       <PichuCanvas />
     </main>
@@ -18,8 +18,9 @@
 import NavBar from '../components/NavBar.vue'
 import BackTopButton from '../components/BackTopButton.vue'
 import PichuCanvas from '~/components/PichuCanvas.vue'
+import MainFooter from '~/components/MainFooter.vue'
 
 export default {
-  components: { NavBar, BackTopButton, PichuCanvas }
+  components: { NavBar, BackTopButton, PichuCanvas, MainFooter }
 }
 </script>
