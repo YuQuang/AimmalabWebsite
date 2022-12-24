@@ -19,28 +19,22 @@
 
 <script>
 export default {
-  props: {
-    target: {
-      type: String,
-      default: ''
-    }
-  },
   data () {
     return {
-      targetElement: null,
       scrollTop: 0
     }
   },
   mounted () {
-    this.targetElement = document.getElementById(this.target) ?? document.body
-    this.targetElement?.addEventListener('scroll', this.scrollHandler)
+    this.$nextTick(() => {
+      window.document.addEventListener('scroll', this.scrollHandler)
+    })
   },
   methods: {
     scrollHandler (e) {
-      this.scrollTop = e.target.scrollTop
+      this.scrollTop = window.document.documentElement.scrollTop
     },
     backToTop () {
-      this.targetElement.scrollTop = 0
+      window.document.documentElement.scrollTop = 0
     }
   }
 }

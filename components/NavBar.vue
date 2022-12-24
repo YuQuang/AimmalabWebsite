@@ -1,38 +1,19 @@
 <template>
-  <div
-    class="absolute pt-4 px-4 w-full text-center transition-all z-20"
-    :class="[scrollTop>100 && 'text-white bg-black/30 backdrop-blur-sm shadow-lg']"
-  >
-    <div
-      class="sm:grid sm:grid-cols-4 grid text-xl font-bold gap-6"
-      :class="[scrollTop<100 && 'sm:block hidden']"
-    >
-      <NuxtLink to="/">
-        <div class="cursor-pointer">
-          <img src="/images/home.png" class="inline-block" style="height: 30px;" :class="scrollTop>100 && 'invert'">
-          <span class="align-middle">Home</span>
-        </div>
-      </NuxtLink>
-      <a href="https://drive.aimmalab.com/">
-        <div class="cursor-pointer">
-          <img src="/images/drive.png" class="inline-block" style="height: 30px;" :class="scrollTop>100 && 'invert'">
-          <span class="align-middle">Drive</span>
-        </div>
-      </a>
-      <a href="https://vpn.aimmalab.com/">
-        <div class="cursor-pointer">
-          <img src="/images/vpn.png" class="inline-block" style="height: 30px;" :class="scrollTop>100 && 'invert'">
-          <span class="align-middle">VPN</span>
-        </div>
-      </a>
-      <a href="https://property.aimmalab.com/">
-        <div class="cursor-pointer">
-          <img src="/images/property.png" class="inline-block" style="height: 30px;" :class="scrollTop>100 && 'invert'">
-          <span class="align-middle">Property</span>
-        </div>
-      </a>
+  <div class="fixed md:w-1/2 text-center z-20 md:right-20 md:top-5 top-3 rounded-full bg-black/70 p-2">
+    <div class="grid grid-cols-4 text-md font-bold gap-6 text-slate-100">
+      <div v-for="listItem, index in MenuList" :key="index">
+        <NuxtLink v-if="listItem.isNuxtLink" :to="listItem.link">
+          <div class="cursor-pointer">
+            <span class="align-middle">{{ listItem.name }}</span>
+          </div>
+        </NuxtLink>
+        <a v-if="!listItem.isNuxtLink" :href="listItem.link">
+          <div class="cursor-pointer">
+            <span class="align-middle">{{ listItem.name }}</span>
+          </div>
+        </a>
+      </div>
     </div>
-    &nbsp;
   </div>
 </template>
 
@@ -46,17 +27,37 @@ export default {
   },
   data () {
     return {
-      scrollTop: 0
+      MenuList: [
+        {
+          name: 'HOME',
+          link: '/',
+          img: '/images/home.png',
+          isNuxtLink: true
+        },
+        {
+          name: 'DRIVE',
+          link: 'https://drive.aimmalab.com/',
+          img: '/images/drive.png',
+          isNuxtLink: false
+        },
+        {
+          name: 'VPN',
+          link: 'https://vpn.aimmalab.com/',
+          img: '/images/vpn.png',
+          isNuxtLink: false
+        },
+        {
+          name: 'PROPERTY',
+          link: 'https://property.aimmalab.com/',
+          img: '/images/property.png',
+          isNuxtLink: false
+        }
+      ]
     }
   },
   mounted () {
-    const target = document.getElementById(this.target) ?? document.body
-    target?.addEventListener('scroll', this.scrollHandler)
   },
   methods: {
-    scrollHandler (e) {
-      this.scrollTop = e.target.scrollTop
-    }
   }
 }
 </script>
