@@ -1,5 +1,5 @@
 # Aimmlab Website
-![example workflow](https://github.com/YuQuang/AimmalabWebsite/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/YuQuang/AimmalabWebsite/actions/workflows/main.yml/badge.svg)<br>
 National Chin-Yi University of Technology E423 Image Website based on Nuxt2.
 
 ## Index
