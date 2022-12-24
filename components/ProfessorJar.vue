@@ -1,8 +1,13 @@
 <template>
   <div
-    class="w-full min-h-screen py-20 px-5 mt-10 flex flex-wrap"
+    class="w-full py-20 px-5 mt-10 flex flex-wrap"
   >
-    <img src="/images/professor.jpg" class="mx-auto my-auto md:w-1/2 w-full object-contain" style="max-height: 60vh;">
+    <div class="md:w-1/2 w-full relative md:h-auto h-96">
+      <img src="/images/professor.jpg" class="mx-auto w-full h-full object-contain z-10 absolute">
+      <div class="bg-cyan-700 w-3/4 absolute left-0" style="bottom: 5vh; height: 20vh;">
+        &nbsp;
+      </div>
+    </div>
     <div class="md:w-1/2 w-full">
       <p class="text-4xl text-center my-5 font-extrabold text-cyan-500">
         Labratory Professor
