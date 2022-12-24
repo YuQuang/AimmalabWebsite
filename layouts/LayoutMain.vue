@@ -8,7 +8,7 @@
       <div class="flex-none">
         <MainFooter />
       </div>
-      <PichuCanvas />
+      <!-- <PichuCanvas /> -->
     </main>
     <BackTopButton target="main" />
   </div>
