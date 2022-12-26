@@ -44,7 +44,7 @@
       />
     </div>
 
-    <div id="professorJar" class="opacity-0" style="transform: translateX(-300px);">
+    <div id="professorJar" class="opacity-0">
       <ProfessorJar />
     </div>
   </div>
@@ -60,20 +60,17 @@ export default {
   components: { FeatureJar, ProfessorJar },
   layout: 'LayoutMain',
   mounted () {
-    const observer = new IntersectionObserver(function (entries) {
-      // isIntersecting is true when element and viewport are overlapping
-      // isIntersecting is false when element and viewport don't overlap
+    const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting === true) {
         anime({
           targets: '#professorJar',
-          translateX: 0,
+          translateX: [-300, 0],
           opacity: 1,
-          delay: 200,
           easing: 'easeInOutQuad'
         })
+        observer.unobserve(document.querySelector('#professorJar'))
       }
-    }, { threshold: [0] })
-
+    }, { threshold: [0.3] })
     observer.observe(document.querySelector('#professorJar'))
   }
 }
