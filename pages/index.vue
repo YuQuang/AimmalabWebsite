@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- Title Image with welcome -->
-    <div class="w-full bg-cover bg-center relative z-0" style="background-image: url('/images/cover.webp');height: 90vh; background-attachment: fixed;">
+    <div class="w-full bg-cover bg-center relative z-0" style="background-image: url('/images/cover.webp');height: 90vh;">
       <div class="backdrop-blur-sm bg-white/5 w-full h-full" />
       <img src="/images/csielogo.webp" max-width="400" class="absolute top-20 sm:right-5 sm:left-auto right-0 left-0">
       <div class="absolute text-slate-100" style="top: 30vh; left: 10vw; right: 10vw;">
