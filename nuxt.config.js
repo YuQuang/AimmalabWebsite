@@ -1,4 +1,10 @@
 export default {
+  // Running setting
+  server: {
+    port: 3000,
+    host: '0.0.0.0'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'AimmalabWebsite',
@@ -18,9 +24,9 @@ export default {
     ]
   },
 
-  server: {
-    port: 3000, // default: 3000
-    host: '0.0.0.0' // default: localhost
+  // Enable the csp
+  render: {
+    csp: true
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

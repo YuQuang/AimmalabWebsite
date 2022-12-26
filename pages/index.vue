@@ -47,6 +47,34 @@
     <div id="professorJar" class="opacity-0">
       <ProfessorJar />
     </div>
+
+    <div class="bg-slate-200 py-8 px-4">
+      <div id="activity" class="opacity-0">
+        <div class="text-3xl font-extrabold text-center">
+          實驗室近期活動
+        </div>
+        <div class="text-xl font-medium text-center mt-4 text-cyan-500">
+          百坪高挑接待廳．全新時尚裝潢． 360度豪景
+        </div>
+        <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
+          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" :src="'https://picsum.photos/400/250?activity' + i">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-200 py-8 px-4">
+      <div id="equipment" class="opacity-0">
+        <div class="text-3xl font-extrabold text-center">
+          實驗室內部設備
+        </div>
+        <div class="text-xl font-medium text-center mt-4 text-cyan-500">
+          位台北車站前全新地標大樓，知名上市公司保障經營
+        </div>
+        <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
+          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" :src="'https://picsum.photos/400/250?equipment' +i">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -72,6 +100,32 @@ export default {
       }
     }, { threshold: [0.3] })
     observer.observe(document.querySelector('#professorJar'))
+
+    const activityObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting === true) {
+        anime({
+          targets: '#activity',
+          translateY: [100, 0],
+          opacity: 1,
+          easing: 'easeInOutQuad'
+        })
+        activityObserver.unobserve(document.querySelector('#activity'))
+      }
+    }, { threshold: [0.5] })
+    activityObserver.observe(document.querySelector('#activity'))
+
+    const equipmentObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting === true) {
+        anime({
+          targets: '#equipment',
+          translateY: [100, 0],
+          opacity: 1,
+          easing: 'easeInOutQuad'
+        })
+        equipmentObserver.unobserve(document.querySelector('#equipment'))
+      }
+    }, { threshold: [0.5] })
+    equipmentObserver.observe(document.querySelector('#equipment'))
   }
 }
 </script>
