@@ -31,25 +31,21 @@ export default {
         {
           name: 'HOME',
           link: '/',
-          img: '/images/home.png',
           isNuxtLink: true
         },
         {
           name: 'DRIVE',
           link: 'https://drive.aimmalab.com/',
-          img: '/images/drive.png',
           isNuxtLink: false
         },
         {
           name: 'VPN',
           link: 'https://vpn.aimmalab.com/',
-          img: '/images/vpn.png',
           isNuxtLink: false
         },
         {
           name: 'PROPERTY',
           link: 'https://property.aimmalab.com/',
-          img: '/images/property.png',
           isNuxtLink: false
         }
       ]
