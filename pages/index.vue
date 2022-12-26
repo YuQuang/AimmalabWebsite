@@ -44,17 +44,37 @@
       />
     </div>
 
-    <ProfessorJar />
+    <div id="professorJar" class="opacity-0" style="transform: translateX(-300px);">
+      <ProfessorJar />
+    </div>
   </div>
 </template>
 
 <script>
+import anime from 'animejs'
 import FeatureJar from '~/components/FeatureJar.vue'
 import ProfessorJar from '~/components/ProfessorJar.vue'
 
 export default {
   name: 'IndexPage',
   components: { FeatureJar, ProfessorJar },
-  layout: 'LayoutMain'
+  layout: 'LayoutMain',
+  mounted () {
+    const observer = new IntersectionObserver(function (entries) {
+      // isIntersecting is true when element and viewport are overlapping
+      // isIntersecting is false when element and viewport don't overlap
+      if (entries[0].isIntersecting === true) {
+        anime({
+          targets: '#professorJar',
+          translateX: 0,
+          opacity: 1,
+          delay: 200,
+          easing: 'easeInOutQuad'
+        })
+      }
+    }, { threshold: [0] })
+
+    observer.observe(document.querySelector('#professorJar'))
+  }
 }
 </script>
