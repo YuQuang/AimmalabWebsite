@@ -54,7 +54,7 @@
           實驗室近期活動
         </div>
         <div class="text-xl font-medium text-center mt-4 text-cyan-500">
-          百坪高挑接待廳．全新時尚裝潢
+          日月潭一日遊、年末尾牙
         </div>
         <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
           <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" :src="'https://picsum.photos/400/250?activity' + i">
