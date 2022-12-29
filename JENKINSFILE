@@ -3,7 +3,7 @@ node{
         checkout scm
     }
     stage('Build image') {
-        dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.17", "--no-cache .")
+        dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.18", "--no-cache .")
     }
     stage('Push image') {
         withDockerRegistry([ credentialsId: "c6872651-fa44-4c41-a5fe-fec3fd93932e", url: "" ]) {
