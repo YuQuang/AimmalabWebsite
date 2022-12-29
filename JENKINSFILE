@@ -1,6 +1,6 @@
 node{
     stage('Build image') {
-        dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.15", "--no-cache .")
+        dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.16", "--no-cache .")
     }
     stage('Push image') {
         withDockerRegistry([ credentialsId: "c6872651-fa44-4c41-a5fe-fec3fd93932e", url: "" ]) {
