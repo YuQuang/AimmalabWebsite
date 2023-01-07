@@ -12,19 +12,11 @@ pipeline {
                     sh '''
                         docker login harbor.aimmalab.com:443 -u=\"${HARBOR_USER}\" -p=\"${HARBOR_PSWD}\"
                         docker build -t royxu/aimmalab-website .
-                        docker tag royxu/aimmalab-website harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.18
-                        docker push harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.18
+                        docker tag royxu/aimmalab-website harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.19
+                        docker push harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.19
                     '''
                 }
             }
         }
     }
-    // stage('Build image') {
-    //     dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.18", "--no-cache .")
-    // }
-    // stage('Push image') {
-    //     withDockerRegistry([ credentialsId: "c6872651-fa44-4c41-a5fe-fec3fd93932e", url: "" ]) {
-    //         dockerImage.push()
-    //     }
-    // }
 }

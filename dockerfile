@@ -1,4 +1,4 @@
-FROM node:16.18.0-slim
+FROM node:lts-alpine3.17
 
 # Copy source file & Setting workspace
 COPY . /Aimmalab/
