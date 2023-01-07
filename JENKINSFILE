@@ -8,10 +8,14 @@ pipeline {
         }
         stage('Build & Push') {
             steps {
-                sh '''
-                    ls
-                    docker images
-                '''
+                withCredentials([usernamePassword(credentialsId: 'harbor-user', usernameVariable: 'HARBOR_USER', passwordVariable: 'HARBOR_PSWD')]) {
+                    sh '''
+                        docker login harbor.aimmalab.com:443 -u=\"${HARBOR_USER}\" -p=\"${HARBOR_PSWD}\"
+                        docker build -t royxu/aimmalab-website .
+                        docker tag royxu/aimmalab-website harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.18
+                        docker push harbor.aimmalab.com:443/royxu/aimmalab-website:0.0.18
+                    '''
+                }
             }
         }
     }
