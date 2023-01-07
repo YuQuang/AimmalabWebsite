@@ -1,12 +1,19 @@
-node{
-    stage('Git checkout') {
-        checkout scm
-    }
-    stage('Build & Push') {
-        sh '''
-            ls
-            docker images
-        '''
+pipeline {
+    agent any
+    stages {
+        stage('Git checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Build & Push') {
+            steps {
+                sh '''
+                    ls
+                    docker images
+                '''
+            }
+        }
     }
     // stage('Build image') {
     //     dockerImage = docker.build("yuquang/aimmalabwebsite:0.0.18", "--no-cache .")
