@@ -16,10 +16,9 @@
 <script>
   import NavBar from '../components/NavBar.vue'
   import BackTopButton from '../components/BackTopButton.vue'
-  import PichuCanvas from '~/components/PichuCanvas.vue'
   import MainFooter from '~/components/MainFooter.vue'
 
   export default {
-    components: { NavBar, BackTopButton, PichuCanvas, MainFooter }
+    components: { NavBar, BackTopButton, MainFooter }
   }
 </script>
