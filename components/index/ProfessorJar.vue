@@ -47,7 +47,7 @@ export default {
         Title: '教授兼圖書館館長',
         AQ: '國立成功大學電機工程博士',
         Email: 'cmwang@ncut.edu.tw',
-        Phone: '分機:8736',
+        Phone: '04-23924505 分機:8736',
         Lab: 'E423',
         Expertise: '智能機器人、無人機、人工智能、手機 APP、智慧生活、物聯網及VR/AR/MR創新應用設計'
       }

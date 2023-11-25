@@ -2,29 +2,29 @@
   <div class="w-full">
     <IndexMainSlider />
 
-    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 md:mx-auto mx-5 max-w-5xl md:-mt-48 mt-4">
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 md:mx-auto mx-5 max-w-5xl md:-mt-40 mt-4">
       <IndexFeatureJar
         class="z-10"
         bg-color="bg-slate-100"
         icon-img="/images/ai.webp"
-        jar-title="人工智慧"
-        jar-content="專注於人工智慧領域，每個禮拜進度報告"
+        jar-title="Artificial Intelligence"
+        jar-content="Focus on the AI realm"
       />
 
       <IndexFeatureJar
         class="z-10"
         bg-color="bg-slate-100"
         icon-img="/images/ic.webp"
-        jar-title="影像處理"
-        jar-content="採用前沿演算法以及最新的技術"
+        jar-title="Image Processing"
+        jar-content="Newest method adopted"
       />
 
       <IndexFeatureJar
         class="z-10"
         bg-color="bg-cyan-500"
         icon-img="/images/joinus.png"
-        jar-title="有意願加入?"
-        jar-content="歡迎加入多媒體應用實驗室!"
+        jar-title="Wanna join us?"
+        jar-content="Welcome to Aimmalab!"
       />
     </div>
 
@@ -38,10 +38,10 @@
           實驗室近期活動
         </div>
         <div class="text-xl font-medium text-center mt-4 text-cyan-500">
-          日月潭一日遊、年末尾牙
+          我已經想不到要放什麼了
         </div>
         <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
-          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" :src="'https://picsum.photos/400/250?activity' + i">
+          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?activity' + i">
         </div>
       </div>
     </div>
@@ -52,10 +52,10 @@
           實驗室內部設備
         </div>
         <div class="text-xl font-medium text-center mt-4 text-cyan-500">
-          位台北車站前全新地標大樓，知名上市公司保障經營
+          設備多樣
         </div>
         <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
-          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" :src="'https://picsum.photos/400/250?equipment' +i">
+          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?equipment' +i">
         </div>
       </div>
     </div>

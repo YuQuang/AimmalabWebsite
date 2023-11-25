@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-80 shadow-md hover:drop-shadow-xl duration-200 hover:-translate-y-1 hover:-translate-x-1 p-5"
+    class="w-full h-72 shadow-md hover:drop-shadow-xl duration-200 hover:-translate-y-1 hover:-translate-x-1 p-5"
     :class="[ bgColor ]"
   >
     <img v-if="iconImg != ''" :src="iconImg" class="mx-auto mt-5" style="height: 100px;">
