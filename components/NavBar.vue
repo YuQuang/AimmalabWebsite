@@ -12,16 +12,25 @@
       <div>
         <NuxtLink to="/">
           <div class="cursor-pointer p-5">
-            <span class="align-middle">Home</span>
+          <img src="/images/home.png" class="h-6 inline-block">
+            <span class="ml-5">Home</span>
           </div>
         </NuxtLink>
 
-        <div class="cursor-pointer p-5" onclick="window.location.href='http://drive.aimmalab.com'">
-          <span class="align-middle">Drive</span>
+        <NuxtLink to="/guide">
+          <div class="cursor-pointer p-5">
+            <img src="/images/guide.png" class="h-6 inline-block">
+            <span class="ml-5">Documentation</span>
+          </div>
+        </NuxtLink>
+
+        <div class="cursor-pointer p-5" onclick="window.location.href='https://drive.aimmalab.com'">
+          <img src="/images/drive.png" class="h-6 inline-block">
+          <span class="ml-5">Drive</span>
         </div>
-        
-        <div class="cursor-pointer p-5" onclick="window.location.href='http://rancher.aimmalab.com'">
-          <span class="align-middle">Drive</span>
+        <div class="cursor-pointer p-5" onclick="window.location.href='https://rancher.aimmalab.com'">
+          <img src="/images/rancher.png" class="h-6 inline-block">
+          <span class="ml-5">Rancher</span>
         </div>
       </div>
   </div>
