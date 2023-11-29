@@ -41,6 +41,9 @@ import anime from 'animejs'
 
 export default {
   data(){
+    return {
+      
+    }
   },
   mounted () {
   },
