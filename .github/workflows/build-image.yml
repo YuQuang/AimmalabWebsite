@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: yuquang/aimmalabwebsite:0.1.7
+          tags: yuquang/aimmalabwebsite:0.1.8
