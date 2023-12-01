@@ -3,7 +3,7 @@
     class="w-full py-20 px-5 mt-10 flex flex-wrap"
   >
     <div class="md:w-1/2 w-full relative md:h-auto h-96">
-      <img src="/images/professor.webp" class="mx-auto w-full h-full object-contain z-10 absolute">
+      <img alt="Professor Image" src="/images/professor.webp" class="mx-auto w-full h-full object-contain z-10 absolute">
       <div class="bg-cyan-700 w-3/4 absolute left-0" style="bottom: 5vh; height: 20vh;">
         &nbsp;
       </div>

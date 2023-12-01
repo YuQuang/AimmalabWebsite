@@ -24,5 +24,6 @@
 
 <style>
   #background {
+    inset: 0px;
   }
 </style>

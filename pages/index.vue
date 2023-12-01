@@ -41,7 +41,7 @@
           我已經想不到要放什麼了
         </div>
         <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
-          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?activity' + i">
+          <img alt="picsum image" v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?activity' + i">
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
           設備多樣
         </div>
         <div class="flex flex-wrap py-5 max-w-5xl mx-auto">
-          <img v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?equipment' +i">
+          <img alt="picsum image" v-for="i in 4" :key="i" class="sm:w-1/2 w-full px-5 py-4" crossorigin="anonymous" :src="'https://picsum.photos/400/250?equipment' +i">
         </div>
       </div>
     </div>

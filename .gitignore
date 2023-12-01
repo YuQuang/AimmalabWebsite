@@ -53,6 +53,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# SonarQube Scanner
+.scannerwork/
+
 # Yarn Integrity file
 .yarn-integrity
 
