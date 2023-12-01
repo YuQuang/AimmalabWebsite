@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     // Reference: https://nuxt-security.vercel.app/
     security: {
         headers: {
-            contentSecurityPolicy: "img-src 'self' https:;",
+            contentSecurityPolicy: "img-src 'self' https:; frame-ancestors 'none'; object-src 'none';",
         },
     },
 })
